@@ -1,6 +1,8 @@
 <template>
   <div class="detail container">
-    <Uptime />
+    <div class="px-1">
+      <Uptime />
+    </div>
 
     <v-row no-gutters>
       <v-col cols="12" md="6" lg="6" class="my-2 px-1">
@@ -32,8 +34,8 @@
         </v-expansion-panels>
       </v-col>
 
-      <v-col cols="12" md="6" lg="6">
-        <v-expansion-panels flat v-model="sysTemp" class="my-2">
+      <v-col cols="12" md="6" lg="6" class="my-2 px-1">
+        <v-expansion-panels flat v-model="sysTemp">
           <v-expansion-panel>
             <v-expansion-panel-header expand-icon="mdi-menu-down">
               Temperature
