@@ -67,10 +67,12 @@ export default {
   name: "Temperature",
 
   data: () => ({
-    width: "100%",
-    height: "250",
     type: "angulargauge",
+    width: "100%",
+    height: "200",
+    containerBackgroundOpacity: "0.8",
     dataFormat: "json",
+    creditLabel: false,
     dataSource: dataSource
   })
 };

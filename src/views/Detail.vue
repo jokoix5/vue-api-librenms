@@ -4,47 +4,78 @@
 
     <v-row no-gutters>
       <v-col cols="12" md="6" lg="6" class="my-2 px-1">
-        <v-card>
-          <v-card-text>
-            <div>Information</div>
-            <p class="display-1 text--primary">Server Test</p>
-            <v-divider></v-divider>
+        <v-expansion-panels flat v-model="sysInfo">
+          <v-expansion-panel>
+            <v-expansion-panel-header expand-icon="mdi-menu-down">
+              Information
+            </v-expansion-panel-header>
 
-            <v-list class="transparent">
-              <v-list-item v-for="item in forecast" :key="item.day">
-                <v-list-item-title>{{ item.day }}</v-list-item-title>
+            <v-expansion-panel-content>
+              <p class="display-1 text--primary">Server Test</p>
+              <v-divider></v-divider>
 
-                <v-list-item-icon>
-                  <v-icon>{{ item.icon }}</v-icon>
-                </v-list-item-icon>
+              <v-list class="transparent">
+                <v-list-item v-for="item in forecast" :key="item.day">
+                  <v-list-item-title>{{ item.day }}</v-list-item-title>
 
-                <v-list-item-subtitle class="text-right">
-                  {{ item.temp }}
-                </v-list-item-subtitle>
-              </v-list-item>
-            </v-list>
-          </v-card-text>
-        </v-card>
+                  <v-list-item-icon>
+                    <v-icon>{{ item.icon }}</v-icon>
+                  </v-list-item-icon>
+
+                  <v-list-item-subtitle class="text-right">
+                    {{ item.temp }}
+                  </v-list-item-subtitle>
+                </v-list-item>
+              </v-list>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
       </v-col>
 
       <v-col cols="12" md="6" lg="6">
-        <v-card class="my-2">
-          <v-card-text>
-            <Temperature />
-          </v-card-text>
-        </v-card>
+        <v-expansion-panels flat v-model="sysTemp" class="my-2">
+          <v-expansion-panel>
+            <v-expansion-panel-header expand-icon="mdi-menu-down">
+              Temperature
+            </v-expansion-panel-header>
 
-        <v-card class="my-2">
-          <v-card-text>
-            <Storage />
-          </v-card-text>
-        </v-card>
+            <v-expansion-panel-content>
+              <Temperature />
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
 
-        <v-card class="my-2">
-          <v-card-text>
-            <Memory />
-          </v-card-text>
-        </v-card>
+        <v-expansion-panels flat v-model="sysStog" class="my-2">
+          <v-expansion-panel>
+            <v-expansion-panel-header expand-icon="mdi-menu-down">
+              Storage
+            </v-expansion-panel-header>
+
+            <v-expansion-panel-content>
+              <v-card flat>
+                <v-card-text>
+                  <Storage />
+                </v-card-text>
+              </v-card>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+
+        <v-expansion-panels flat v-model="sysMem" class="my-2">
+          <v-expansion-panel>
+            <v-expansion-panel-header expand-icon="mdi-menu-down">
+              Memory
+            </v-expansion-panel-header>
+
+            <v-expansion-panel-content>
+              <v-card flat>
+                <v-card-text>
+                  <Memory />
+                </v-card-text>
+              </v-card>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
       </v-col>
     </v-row>
   </div>
@@ -67,6 +98,10 @@ export default {
   },
 
   data: () => ({
+    sysInfo: 0,
+    sysTemp: 0,
+    sysStog: 0,
+    sysMem: 0,
     forecast: [
       { day: 'Tuesday', icon: 'mdi-white-balance-sunny', temp: '24\xB0/12\xB0' },
       { day: 'Wednesday', icon: 'mdi-white-balance-sunny', temp: '22\xB0/14\xB0' },

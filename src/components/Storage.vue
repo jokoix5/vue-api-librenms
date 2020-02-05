@@ -64,7 +64,7 @@ export default {
     type: "hled",
     width: "100%",
     height: "100%",
-    containerBackgroundOpacity:"0.8",
+    containerBackgroundOpacity: "0.8",
     dataFormat: "json",
     creditLabel: false,
     dataSource: dataSource
