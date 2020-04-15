@@ -3,15 +3,14 @@
 import Vue from "vue";
 import axios from "axios";
 
-// Full config:  https://github.com/axios/axios#request-config
-// axios.defaults.baseURL = process.env.baseURL || process.env.apiUrl || '';
-// axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
-// axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
-
 let config = {
   // baseURL: process.env.baseURL || process.env.apiUrl || ""
-  // timeout: 60 * 1000, // Timeout
-  // withCredentials: true, // Check cross-site Access-Control
+  baseURL: "https://nms.stikom-bali.ac.id/api/v0/",
+  timeout: 60 * 1000,
+  withCredentials: true,
+  headers: {
+    "X-Auth-Token": "4e7791d216add012aa5f710341df1177"
+  }
 };
 
 const _axios = axios.create(config);

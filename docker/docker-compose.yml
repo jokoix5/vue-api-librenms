@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  snmpd:
+    image: polinux/snmpd:alpine
+    container_name: snmpd_alpine
+    volumes:
+      - ./snmpd.conf:/etc/snmp/snmpd.conf
+    ports:
+      - 161:161/udp
+
+  web:
+    image: jarischaefer/docker-librenms
+    hostname: librenms
+    ports:
+      - "80:80"
+    volumes:
+      - /librenms/logs:/opt/librenms/logs
+      - /librenms/rrd:/opt/librenms/rrd
+    environment:
+      - APP_KEY=base64:FEOh+d+NDTZX+CJE9B+KMiGW5tgypk31uzrz8Mb1qlg=
+      - DB_HOST=db
+      - DB_NAME=librenms
+      - DB_USER=librenms
+      - DB_PASS=librenms
+      - POLLERS=16
+      - BASE_URL=http://localhost
+    links:
+      - mysql:db
+
+  mysql:
+    image: mysql:5.6
+    command: --sql-mode="development"
+    ports:
+      - "3306"
+    volumes:
+      - /db/mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_USER=librenms
+      - MYSQL_PASSWORD=librenms
+      - MYSQL_DATABASE=librenms

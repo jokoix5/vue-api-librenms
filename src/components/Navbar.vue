@@ -3,12 +3,12 @@
     <v-app-bar color="blue accent-4" flat dark>
       <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
         <router-link to="/" class="white--text font-weight-bold">
-          Vue LibreNMS
+          Dashoard LibreNMS
         </router-link>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
-
+<!-- 
       <v-form>
         <v-text-field
           flat
@@ -19,7 +19,7 @@
           class="hidden-sm-and-down"
           placeholder="Searching..."
         />
-      </v-form>
+      </v-form> -->
     </v-app-bar>
   </div>
 </template>

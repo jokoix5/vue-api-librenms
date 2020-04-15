@@ -1,0 +1,31 @@
+2020/02/08-14:34:03.543 21f6 Reusing MANIFEST /home/nandha/Projects/Personal/VueJS/vue-librenms/chrome_dev_test/Default/Session Storage/MANIFEST-000001
+2020/02/08-14:39:44.380 253f Level-0 table #5: started
+2020/02/08-14:39:44.449 253f Level-0 table #5: 14931 bytes OK
+2020/02/08-14:39:44.487 253f Delete type=0 #3
+2020/02/08-14:49:55.444 253f Level-0 table #7: started
+2020/02/08-14:49:55.533 253f Level-0 table #7: 16094 bytes OK
+2020/02/08-14:49:55.570 253f Delete type=0 #4
+2020/02/08-15:01:16.576 253f Level-0 table #9: started
+2020/02/08-15:01:16.659 253f Level-0 table #9: 21519 bytes OK
+2020/02/08-15:01:16.704 253f Delete type=0 #6
+2020/02/08-15:21:00.706 253f Level-0 table #11: started
+2020/02/08-15:21:00.804 253f Level-0 table #11: 24095 bytes OK
+2020/02/08-15:21:00.844 253f Delete type=0 #8
+2020/02/08-15:33:14.025 253f Level-0 table #13: started
+2020/02/08-15:33:14.096 253f Level-0 table #13: 19906 bytes OK
+2020/02/08-15:33:14.159 253f Delete type=0 #10
+2020/02/08-16:44:15.613 253f Level-0 table #15: started
+2020/02/08-16:44:15.682 253f Level-0 table #15: 20627 bytes OK
+2020/02/08-16:44:15.720 253f Delete type=0 #12
+2020/02/08-16:44:15.721 253f Compacting 4@0 + 1@1 files
+2020/02/08-16:44:15.771 253f Generated table #16@0: 182 keys, 63469 bytes
+2020/02/08-16:44:15.771 253f Compacted 4@0 + 1@1 files => 63469 bytes
+2020/02/08-16:44:15.809 253f compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/02/08-16:44:15.809 253f Delete type=2 #11
+2020/02/08-16:44:15.809 253f Delete type=2 #13
+2020/02/08-16:44:15.809 253f Delete type=2 #9
+2020/02/08-16:44:15.809 253f Delete type=2 #7
+2020/02/08-16:44:15.809 253f Delete type=2 #15
+2020/02/08-17:26:55.407 253f Level-0 table #18: started
+2020/02/08-17:26:55.506 253f Level-0 table #18: 24010 bytes OK
+2020/02/08-17:26:55.543 253f Delete type=0 #14
