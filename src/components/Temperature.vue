@@ -1,14 +1,22 @@
+
+// duplicate temperature, modif membuat alert kalau temp ngak ada
+
 <template>
-  <div>
-    
-    <fusioncharts
-      :type="type"
-      :width="width"
-      :height="height"
-      :dataFormat="dataFormat"
-      :dataSource="dataSource"
-    ></fusioncharts>
-  </div>
+  <v-card flat class="mx-auto">
+    <div v-if="isEmpty">
+      <v-alert type="warning">Opps! Graph for memory pools is not available.</v-alert>
+    </div>
+
+    <div v-if="!isEmpty">
+      <fusioncharts
+        :type="type"
+        :width="width"
+        :height="height"
+        :dataFormat="dataFormat"
+        :dataSource="dataSource"
+      ></fusioncharts>
+    </div>
+  </v-card>
 </template>
 
 <script>
@@ -127,13 +135,17 @@ export default {
                 `devices/${this.$route.params.hostname}/health/device_temperature/${response.data.graphs[i].sensor_id}`
               )
               .then(resultResp => {
-                if (i > tmp) {
-                  tmp = i;
-                } else {
-                  // this.dataTemp(resultResp.data.graphs[0]);
-                  this.dataSource.dials.dial.value(resultResp.data.graphs)
-                }
-                console.log(resultResp);
+                // if (response.data.size === 0) {
+                //   this.isEmpty = true;
+                // } else {
+                  if (i > tmp) {
+                    tmp = i;
+                  } else {
+                    // this.dataTemp(resultResp.data.graphs[0]);
+                    this.dataSource.dials.dial.value(resultResp.data.graphs)
+                  }
+                  console.log(resultResp);
+                // }
               });
           }
           // console.log("damn",response)

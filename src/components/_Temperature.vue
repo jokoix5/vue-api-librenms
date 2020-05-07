@@ -1,3 +1,6 @@
+
+// temperature yang asli
+
 <template>
   <div>
     <h4>Temperature</h4>

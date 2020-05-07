@@ -8,18 +8,16 @@
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
-<!-- 
-      <v-form>
-        <v-text-field
+
+      <v-div>
+        <v-card-text
           flat
           dense
           hide-details
           outlined
-          prepend-inner-icon="mdi-magnify"
-          class="hidden-sm-and-down"
-          placeholder="Searching..."
-        />
-      </v-form> -->
+          class="hidden-sm-and-down">suhu ruangan 68C     
+        </v-card-text>
+      </v-div>
     </v-app-bar>
   </div>
 </template>
