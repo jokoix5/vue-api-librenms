@@ -1,1 +1,18 @@
-2020/04/20-18:36:27.529 1450 Reusing MANIFEST /home/media/Downloads/vue-librenms/Default/Local Storage/leveldb/MANIFEST-000001
+2020/06/16-02:33:35.271 2b52 Reusing MANIFEST /home/media/Videos/vue-librenms/Default/Local Storage/leveldb/MANIFEST-000001
+2020/06/16-02:33:35.272 2b52 Recovering log #3
+2020/06/16-02:33:35.505 2b52 Reusing old log /home/media/Videos/vue-librenms/Default/Local Storage/leveldb/000003.log 
+2020/06/18-23:36:59.264 3cd1 Level-0 table #5: started
+2020/06/18-23:36:59.307 3cd1 Level-0 table #5: 13055 bytes OK
+2020/06/18-23:36:59.354 3cd1 Delete type=0 #3
+2020/06/18-23:46:44.291 3cd1 Level-0 table #7: started
+2020/06/18-23:46:44.323 3cd1 Level-0 table #7: 21080 bytes OK
+2020/06/18-23:46:44.355 3cd1 Delete type=0 #4
+2020/06/18-23:53:51.876 3cd1 Level-0 table #9: started
+2020/06/18-23:53:52.077 3cd1 Level-0 table #9: 33586 bytes OK
+2020/06/18-23:53:52.140 3cd1 Delete type=0 #6
+2020/06/18-23:57:59.257 3cd1 Level-0 table #11: started
+2020/06/18-23:57:59.285 3cd1 Level-0 table #11: 34008 bytes OK
+2020/06/18-23:57:59.320 3cd1 Delete type=0 #8
+2020/06/19-00:00:10.073 3cd1 Level-0 table #13: started
+2020/06/19-00:00:10.127 3cd1 Level-0 table #13: 50543 bytes OK
+2020/06/19-00:00:10.166 3cd1 Delete type=0 #10

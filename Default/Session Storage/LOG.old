@@ -1,1 +1,6 @@
-2020/04/20-18:36:34.758 1470 Reusing MANIFEST /home/media/Downloads/vue-librenms/Default/Session Storage/MANIFEST-000001
+2020/06/16-02:33:35.809 2b72 Reusing MANIFEST /home/media/Videos/vue-librenms/Default/Session Storage/MANIFEST-000001
+2020/06/16-02:33:35.809 2b72 Recovering log #3
+2020/06/16-02:33:35.897 2b72 Reusing old log /home/media/Videos/vue-librenms/Default/Session Storage/000003.log 
+2020/06/18-23:56:59.085 3cd1 Level-0 table #5: started
+2020/06/18-23:56:59.142 3cd1 Level-0 table #5: 31254 bytes OK
+2020/06/18-23:56:59.203 3cd1 Delete type=0 #3

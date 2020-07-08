@@ -1,0 +1,5 @@
+2020/06/18-23:58:18.970 3f72 Reusing MANIFEST /home/media/Videos/vue-librenms/Default/IndexedDB/https_www.vice.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/19-00:00:30.371 30ab Level-0 table #5: started
+2020/06/19-00:00:30.415 30ab Level-0 table #5: 3422 bytes OK
+2020/06/19-00:00:30.449 30ab Delete type=0 #3
+2020/06/19-00:00:30.449 30ab Manual compaction at level-0 from (begin) .. (end); will stop at (end)

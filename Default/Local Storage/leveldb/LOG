@@ -1,3 +1,18 @@
-2020/05/08-01:03:31.069 6219 Reusing MANIFEST /home/media/Downloads/vue-librenms/Default/Local Storage/leveldb/MANIFEST-000001
-2020/05/08-01:03:31.069 6219 Recovering log #3
-2020/05/08-01:03:31.396 6219 Reusing old log /home/media/Downloads/vue-librenms/Default/Local Storage/leveldb/000003.log 
+2020/06/28-23:33:59.443 6e37 Reusing MANIFEST /home/media/Videos/vue-librenms/Default/Local Storage/leveldb/MANIFEST-000001
+2020/06/28-23:33:59.443 6e37 Recovering log #12
+2020/06/28-23:33:59.665 6e37 Reusing old log /home/media/Videos/vue-librenms/Default/Local Storage/leveldb/000012.log 
+2020/06/29-00:02:38.128 7639 Level-0 table #16: started
+2020/06/29-00:02:38.209 7639 Level-0 table #16: 17161 bytes OK
+2020/06/29-00:02:38.254 7639 Delete type=0 #12
+2020/06/29-00:02:38.255 7639 Compacting 4@0 + 1@1 files
+2020/06/29-00:02:38.322 7639 Generated table #17@0: 420 keys, 132052 bytes
+2020/06/29-00:02:38.322 7639 Compacted 4@0 + 1@1 files => 132052 bytes
+2020/06/29-00:02:38.354 7639 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/06/29-00:02:38.354 7639 Delete type=2 #7
+2020/06/29-00:02:38.354 7639 Delete type=2 #16
+2020/06/29-00:02:38.354 7639 Delete type=2 #9
+2020/06/29-00:02:38.354 7639 Delete type=2 #13
+2020/06/29-00:02:38.354 7639 Delete type=2 #11
+2020/06/30-10:14:22.189 7639 Level-0 table #19: started
+2020/06/30-10:14:22.239 7639 Level-0 table #19: 17441 bytes OK
+2020/06/30-10:14:22.298 7639 Delete type=0 #15

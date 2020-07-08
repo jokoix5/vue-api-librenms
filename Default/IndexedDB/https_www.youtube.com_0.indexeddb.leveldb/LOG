@@ -1,0 +1,15 @@
+2020/06/30-09:09:25.958 4c91 Reusing MANIFEST /home/media/Videos/vue-librenms/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/30-09:09:25.958 4c91 Recovering log #4
+2020/06/30-09:09:25.958 4c91 Reusing old log /home/media/Videos/vue-librenms/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000004.log 
+2020/06/30-11:00:25.303 5931 Level-0 table #8: started
+2020/06/30-11:00:25.345 5931 Level-0 table #8: 2074 bytes OK
+2020/06/30-11:00:25.409 5931 Delete type=0 #4
+2020/06/30-11:00:25.409 5931 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/06/30-11:00:25.409 5931 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 230 : 1
+2020/06/30-11:00:25.409 5931 Compacting 1@1 + 1@2 files
+2020/06/30-11:00:25.457 5931 Generated table #9@1: 34 keys, 1116 bytes
+2020/06/30-11:00:25.457 5931 Compacted 1@1 + 1@2 files => 1116 bytes
+2020/06/30-11:00:25.497 5931 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/06/30-11:00:25.498 5931 Delete type=2 #8
+2020/06/30-11:00:25.498 5931 Delete type=2 #5
+2020/06/30-11:00:25.498 5931 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 230 : 1 .. (end); will stop at (end)

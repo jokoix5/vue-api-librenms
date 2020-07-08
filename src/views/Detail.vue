@@ -125,18 +125,6 @@
           </v-expansion-panel>
         </v-expansion-panels>
 
-         <v-expansion-panels flat v-model="sysSuhu">
-          <v-expansion-panel>
-            <v-expansion-panel-header expand-icon="mdi-menu-down">
-              Suhu
-            </v-expansion-panel-header>
-
-            <v-expansion-panel-content>
-              <Suhu />
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>        
-
       </v-col>
     </v-row>
   </div>
@@ -148,7 +136,7 @@ import Temperature from "@/components/Temperature";
 import Storage from "@/components/Storage";
 import Memory from "@/components/Memory";
 import Processor from "@/components/Processor";
-import Suhu from "@/components/Suhu";
+
 
 export default {
   name: "Detail",
@@ -159,7 +147,7 @@ export default {
     Storage,
     Memory,
     Processor,
-    Suhu,
+
   },
 
   data: () => ({
@@ -169,7 +157,6 @@ export default {
     sysStog: 0,
     sysMem: 0,
     sysPro: 0,
-    sysSuhu: 0,
   }),
 
   mounted() {

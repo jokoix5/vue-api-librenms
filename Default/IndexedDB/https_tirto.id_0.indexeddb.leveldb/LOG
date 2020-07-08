@@ -1,0 +1,5 @@
+2020/06/18-23:53:43.903 3f72 Reusing MANIFEST /home/media/Videos/vue-librenms/Default/IndexedDB/https_tirto.id_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/18-23:55:35.829 30ab Level-0 table #5: started
+2020/06/18-23:55:35.872 30ab Level-0 table #5: 5997 bytes OK
+2020/06/18-23:55:35.902 30ab Delete type=0 #3
+2020/06/18-23:55:35.903 30ab Manual compaction at level-0 from (begin) .. (end); will stop at (end)

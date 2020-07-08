@@ -1,0 +1,15 @@
+2020/06/18-23:44:38.124 3ce9 Reusing MANIFEST /home/media/Videos/vue-librenms/Default/IndexedDB/https_www.tokopedia.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/18-23:44:38.124 3ce9 Recovering log #4
+2020/06/18-23:44:38.124 3ce9 Reusing old log /home/media/Videos/vue-librenms/Default/IndexedDB/https_www.tokopedia.com_0.indexeddb.leveldb/000004.log 
+2020/06/18-23:46:09.195 30ab Level-0 table #8: started
+2020/06/18-23:46:09.229 30ab Level-0 table #8: 14983 bytes OK
+2020/06/18-23:46:09.268 30ab Delete type=0 #4
+2020/06/18-23:46:09.269 30ab Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/06/18-23:46:09.269 30ab Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x03\x01\x02\x01\x0c\x00r\x00e\x00p\x00o\x00r\x00t\x00P\x00a\x00r\x00a\x00m\x00s' @ 402 : 1
+2020/06/18-23:46:09.269 30ab Compacting 1@1 + 1@2 files
+2020/06/18-23:46:09.308 30ab Generated table #9@1: 116 keys, 6820 bytes
+2020/06/18-23:46:09.308 30ab Compacted 1@1 + 1@2 files => 6820 bytes
+2020/06/18-23:46:09.346 30ab compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/06/18-23:46:09.346 30ab Delete type=2 #8
+2020/06/18-23:46:09.346 30ab Delete type=2 #5
+2020/06/18-23:46:09.347 30ab Manual compaction at level-1 from '\x00\x03\x01\x02\x01\x0c\x00r\x00e\x00p\x00o\x00r\x00t\x00P\x00a\x00r\x00a\x00m\x00s' @ 402 : 1 .. (end); will stop at (end)

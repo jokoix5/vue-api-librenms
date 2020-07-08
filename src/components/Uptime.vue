@@ -12,7 +12,7 @@
         <div class="d-inline-flex mx-auto">
           <v-row>
             <v-col cols="12" sm="4" md="4">
-              <v-menu
+              <!-- <v-menu
                 ref="menuDateStart"
                 v-model="menuDateStart"
                 :close-on-content-click="false"
@@ -33,11 +33,12 @@
                   ></v-text-field>
                 </template>
                 <v-date-picker v-model="dateStart" no-title @input="menuDateStart = false"></v-date-picker>
-              </v-menu>
+              </v-menu> -->
+             
             </v-col>
 
             <v-col cols="12" sm="4" md="4">
-              <v-menu
+              <!-- <v-menu
                 ref="menuDateEnd"
                 v-model="menuDateEnd"
                 :close-on-content-click="false"
@@ -58,7 +59,7 @@
                   ></v-text-field>
                 </template>
                 <v-date-picker v-model="dateEnd" no-title @input="menuDateEnd = false"></v-date-picker>
-              </v-menu>
+              </v-menu> -->
             </v-col>
 
             <v-col cols="12" sm="4" md="4" class="mt-4">
@@ -84,7 +85,7 @@ export default {
     dateFormattedStart: "",
     dateFormattedEnd: "",
     uptimeImage: "",
-    isEmpty: false
+    isEmpty: false,
   }),
 
   mounted() {

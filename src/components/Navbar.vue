@@ -6,18 +6,6 @@
           Dashoard LibreNMS
         </router-link>
       </v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-div>
-        <v-card-text
-          flat
-          dense
-          hide-details
-          outlined
-          class="hidden-sm-and-down">suhu ruangan 68C     
-        </v-card-text>
-      </v-div>
     </v-app-bar>
   </div>
 </template>

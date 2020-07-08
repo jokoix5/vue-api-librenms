@@ -1,0 +1,5 @@
+2020/06/18-23:42:54.812 3cd5 Reusing MANIFEST /home/media/Videos/vue-librenms/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/18-23:43:59.040 30ab Level-0 table #5: started
+2020/06/18-23:43:59.079 30ab Level-0 table #5: 797 bytes OK
+2020/06/18-23:43:59.120 30ab Delete type=0 #3
+2020/06/18-23:43:59.120 30ab Manual compaction at level-0 from (begin) .. (end); will stop at (end)

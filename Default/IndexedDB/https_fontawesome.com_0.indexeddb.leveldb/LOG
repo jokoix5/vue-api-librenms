@@ -1,0 +1,26 @@
+2020/06/28-23:34:41.284 6e5c Reusing MANIFEST /home/media/Videos/vue-librenms/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/28-23:34:41.284 6e5c Recovering log #11
+2020/06/28-23:34:41.329 6e5c Level-0 table #15: started
+2020/06/28-23:34:41.379 6e5c Level-0 table #15: 5209 bytes OK
+2020/06/28-23:34:41.379 6e5c Recovering log #15
+2020/06/28-23:34:41.379 6e5c Reusing old log /home/media/Videos/vue-librenms/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/000015.log 
+2020/06/28-23:34:41.417 6e5c Delete type=0 #11
+2020/07/08-16:22:37.506 5931 Level-0 table #17: started
+2020/07/08-16:22:37.721 5931 Level-0 table #17: 25285 bytes OK
+2020/07/08-16:22:37.942 5931 Delete type=0 #15
+2020/07/08-16:22:38.447 5931 Manual compaction at level-0 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x05\x00s\x00t\x00a\x00t\x00e' @ 885 : 1
+2020/07/08-16:22:38.447 5931 Compacting 2@0 + 0@1 files
+2020/07/08-16:22:38.737 5931 Generated table #18@0: 560 keys, 5590 bytes
+2020/07/08-16:22:38.737 5931 Compacted 2@0 + 0@1 files => 5590 bytes
+2020/07/08-16:22:38.838 5931 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/07/08-16:22:38.839 5931 Delete type=2 #17
+2020/07/08-16:22:38.839 5931 Delete type=2 #15
+2020/07/08-16:22:38.839 5931 Manual compaction at level-0 from '\x00\x01\x01\x02\x01\x05\x00s\x00t\x00a\x00t\x00e' @ 885 : 1 .. (end); will stop at (end)
+2020/07/08-16:22:38.839 5931 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x05\x00s\x00t\x00a\x00t\x00e' @ 2529 : 1
+2020/07/08-16:22:38.839 5931 Compacting 1@1 + 1@2 files
+2020/07/08-16:22:38.917 5931 Generated table #19@1: 53 keys, 1185 bytes
+2020/07/08-16:22:38.917 5931 Compacted 1@1 + 1@2 files => 1185 bytes
+2020/07/08-16:22:39.004 5931 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/07/08-16:22:39.005 5931 Delete type=2 #13
+2020/07/08-16:22:39.005 5931 Delete type=2 #18
+2020/07/08-16:22:39.005 5931 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x05\x00s\x00t\x00a\x00t\x00e' @ 2529 : 1 .. (end); will stop at (end)

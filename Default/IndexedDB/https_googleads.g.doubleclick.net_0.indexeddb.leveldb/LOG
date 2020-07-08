@@ -1,0 +1,5 @@
+2020/07/08-16:08:23.809 2827 Reusing MANIFEST /home/media/Videos/vue-librenms/Default/IndexedDB/https_googleads.g.doubleclick.net_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/08-16:08:31.325 5931 Level-0 table #5: started
+2020/07/08-16:08:31.360 5931 Level-0 table #5: 385 bytes OK
+2020/07/08-16:08:31.428 5931 Delete type=0 #3
+2020/07/08-16:08:31.428 5931 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
