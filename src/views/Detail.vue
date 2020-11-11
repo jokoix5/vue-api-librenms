@@ -177,16 +177,11 @@ export default {
     sysStog: 0,
     sysMem: 0,
     sysPro: 0,
-    // timer: '',
   }),
-  // created () {
-  //   this.timer = setInterval(this.fetchEventsList, 300000)
-  // },
   mounted() {
     this.initDateStart()
     this.initDateEnd()
     this.fetchDevice()
-    // this.timer = setInterval(this.fetchDevice, 300000)
   },
 
   methods: {
@@ -243,11 +238,7 @@ export default {
 
       return content
     },
-    // cancelAutoUpdate () { clearInterval(this.timer) }
   },
-  // beforeDestroy () {
-  //     clearInterval(this.timer)
-  //   }
 }
 </script>
 

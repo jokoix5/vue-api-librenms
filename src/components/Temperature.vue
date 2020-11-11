@@ -76,6 +76,20 @@ let dataSource = {
   },
 }
 
+const initialData = () => ({
+  tmp: 0,
+  dataTemp: {},
+  type: "angulargauge",
+  width: "100%",
+  height: "200",
+  containerBackgroundOpacity: "0.8",
+  dataFormat: "json",
+  creditLabel: false,
+  dataSource: dataSource,
+  isEmpty: false,
+  isLoading: false,
+})
+
 import Loading from "@/components/Loading"
 
 export default {
@@ -83,24 +97,12 @@ export default {
 
   components: { Loading },
 
-  data: () => ({
-    tmp: 0,
-    dataTemp: {},
-    type: "angulargauge",
-    width: "100%",
-    height: "200",
-    containerBackgroundOpacity: "0.8",
-    dataFormat: "json",
-    creditLabel: false,
-    dataSource: dataSource,
-    isEmpty: false,
-    isLoading: false,
-    timer: '',
-  }),
+  data() {
+    return initialData()
+  },
 
   mounted() {
     this.fetchTemp()
-    this.timer = setInterval(this.fetchTemp, 300)
   },
 
   methods: {
@@ -110,27 +112,31 @@ export default {
           `/devices/${this.$route.params.hostname}/health/device_temperature`
         )
         .then((response) => {
-          response.data.graphs.forEach((graph) => {
-            this.axios
-              .get(
-                `devices/${this.$route.params.hostname}/health/device_temperature/${graph.sensor_id}`
-              )
-              .then((sensorResponse) => {
-                const current = sensorResponse.data.graphs[0].sensor_current
+          const graphs = response.data.graphs
 
-                if (this.tmp < current) {
-                  this.tmp = current
-                  this.dataSource.dials.dial[0].value = current
-                }
-              })
-              .catch((error) => this.errors.push(error))
-          })
-          
+          if (graphs.length > 0) {
+            response.data.graphs.forEach((graph) => {
+              this.axios
+                .get(
+                  `devices/${this.$route.params.hostname}/health/device_temperature/${graph.sensor_id}`
+                )
+                .then((sensorResponse) => {
+                  const current = sensorResponse.data.graphs[0].sensor_current
+
+                  if (this.tmp < current) {
+                    this.tmp = current
+                    this.dataSource.dials.dial[0].value = current
+                  }
+                })
+                .catch((error) => console.log(error))
+            })
+          } else {
+            this.tmp = 0
+            this.dataSource.dials.dial[0].value = 0
+          }
         })
-        .catch((error) => this.errors.push(error))
-        .cancelAutoUpdate(clearInterval(this.timer))
-    },
-    beforeDestroy() {clearInterval(this.timer)}
+        .catch((error) => console.log(error))
+    }
   },
 }
 </script>
