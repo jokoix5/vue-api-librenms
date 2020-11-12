@@ -98,24 +98,12 @@ export default {
 
   components: { Loading },
 
-  props: ["dateStart", "dateEnd"],
-
   data() {
     return initialData()
   },
 
   mounted() {
     this.fetchTemp()
-  },
-
-  watch: {
-    dateStart() {
-      this.fetchTemp()
-    },
-
-    dateEnd() {
-      this.fetchTemp()
-    },
   },
 
   methods: {
@@ -130,7 +118,7 @@ export default {
             response.data.graphs.forEach((graph, i) => {
               this.axios
                 .get(
-                  `devices/${this.$route.params.hostname}/health/device_temperature/${graph.sensor_id}?from=${toTimestamp(this.dateStart)}&to=${toTimestamp(this.dateEnd)}`
+                  `devices/${this.$route.params.hostname}/health/device_temperature/${graph.sensor_id}`
                 )
                 .then((sensorResponse) => {
                   const current = sensorResponse.data.graphs[0].sensor_current
