@@ -95,7 +95,7 @@
             </v-expansion-panel-header>
 
             <v-expansion-panel-content>
-              <Temperature />
+              <Temperature :dateStart="dateStart" :dateEnd="dateEnd" />
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
@@ -179,9 +179,12 @@ export default {
     sysPro: 0,
   }),
   mounted() {
+    this.fetchDevice()
+  },
+
+  beforeMount() {
     this.initDateStart()
     this.initDateEnd()
-    this.fetchDevice()
   },
 
   methods: {

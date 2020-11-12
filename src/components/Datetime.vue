@@ -3,7 +3,7 @@
     <v-card flat class="mb-2" width="100%">
       <v-row class="mx-3">
         <v-col cols="12" md="12" lg="5">
-          <v-datetime-picker label="Start Date" v-model="dateStart" date-format="MM/dd/yyyy" time-format="HH:mm" :time-picker-props="{ ampmInTitle: true }">
+          <v-datetime-picker label="Start Date" v-model="childDateStart" date-format="MM/dd/yyyy" time-format="HH:mm" :time-picker-props="{ ampmInTitle: true }">
             <template slot="dateIcon">
               <v-icon>fas fa-calendar</v-icon>
             </template>
@@ -15,7 +15,7 @@
         </v-col>
 
         <v-col cols="12" md="12" lg="5">
-          <v-datetime-picker label="End Date" v-model="dateEnd" date-format="MM/dd/yyyy" time-format="HH:mm">
+          <v-datetime-picker label="End Date" v-model="childDateEnd" date-format="MM/dd/yyyy" time-format="HH:mm">
             <template slot="dateIcon">
               <v-icon>fas fa-calendar</v-icon>
             </template>
@@ -43,13 +43,19 @@ export default {
   props: ["dateStart", "dateEnd"],
 
   data: () => ({
+    childDateStart: "",
+    childDateEnd: "",
     hasError: false,
   }),
 
+  beforeMount() {
+    this.childDateStart = this.dateStart
+    this.childDateEnd = this.dateEnd
+  },
+
   methods: {
     handleDateTime() {
-      const value = { dateStart: this.dateStart, dateEnd: this.dateEnd }
-
+      const value = { dateStart: this.childDateStart, dateEnd: this.childDateEnd }
       this.$emit("handleDateTime", value)
     },
   },

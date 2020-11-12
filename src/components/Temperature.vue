@@ -91,11 +91,14 @@ const initialData = () => ({
 })
 
 import Loading from "@/components/Loading"
+import { toTimestamp } from "../utils/date"
 
 export default {
   name: "Temperature",
 
   components: { Loading },
+
+  props: ["dateStart", "dateEnd"],
 
   data() {
     return initialData()
@@ -103,6 +106,16 @@ export default {
 
   mounted() {
     this.fetchTemp()
+  },
+
+  watch: {
+    dateStart() {
+      this.fetchTemp()
+    },
+
+    dateEnd() {
+      this.fetchTemp()
+    },
   },
 
   methods: {
@@ -113,12 +126,11 @@ export default {
         )
         .then((response) => {
           const graphs = response.data.graphs
-
           if (graphs.length > 0) {
-            response.data.graphs.forEach((graph) => {
+            response.data.graphs.forEach((graph, i) => {
               this.axios
                 .get(
-                  `devices/${this.$route.params.hostname}/health/device_temperature/${graph.sensor_id}`
+                  `devices/${this.$route.params.hostname}/health/device_temperature/${graph.sensor_id}?from=${toTimestamp(this.dateStart)}&to=${toTimestamp(this.dateEnd)}`
                 )
                 .then((sensorResponse) => {
                   const current = sensorResponse.data.graphs[0].sensor_current
